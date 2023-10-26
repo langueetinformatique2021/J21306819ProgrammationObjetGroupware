@@ -1,4 +1,4 @@
-package tp2;
+package tp02;
 
 /**
  * La classe A contient une unique méthode treize prenant un entier n et renvoyant un booléen indiquant si cet entier est divisible par 13.

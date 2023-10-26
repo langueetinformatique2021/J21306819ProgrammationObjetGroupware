@@ -1,4 +1,4 @@
-package tp2;
+package tp02;
 
 /**
  * La classe testAB contient une méthode main qui teste la méthode divise() de la classe B un certain nombre de fois.

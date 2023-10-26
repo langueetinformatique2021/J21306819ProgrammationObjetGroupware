@@ -1,4 +1,4 @@
-package tp2;
+package tp02;
 /**
  * La classe B contient une unique méthode divise() prenant un entier n et qui renvoie n/2 s’il est divisible par 13 et n+2 sinon.
  */
