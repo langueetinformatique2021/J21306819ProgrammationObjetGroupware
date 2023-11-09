@@ -5,13 +5,13 @@ package tp05;
  */
 public class Carafe {
 	// attributs de classe privés
-	private int contenu, capacite;
+	private int contenu_, capacite_;
 	
 	/**
 	 * Constructeur vide de la classe Carafe. Initialise le contenu et la capacite à 0. 
 	 */
 	public Carafe() {
-		contenu = 0; capacite = 0;
+		contenu_ = 0; capacite_ = 0;
 	}
 	
 	/**
@@ -20,7 +20,7 @@ public class Carafe {
 	 * @param cap
 	 */
 	public Carafe(int cap) {
-		contenu = 0; capacite = cap;
+		contenu_ = 0; capacite_ = cap;
 	};
 	
 	/**
@@ -28,7 +28,7 @@ public class Carafe {
 	 * @return contenu
 	 */
 	public int getContenu() {
-		return contenu;
+		return contenu_;
 	}
 	
 	/**
@@ -36,7 +36,7 @@ public class Carafe {
 	 * @return
 	 */
 	public int getCapacite() {
-		return capacite;
+		return capacite_;
 	}
 	
 	/**
@@ -44,7 +44,7 @@ public class Carafe {
 	 * @param cap int taille de la capacité qu’on veut redéfinir
 	 */
 	public void Capacite(int cap) {
-		capacite = cap;
+		capacite_ = cap;
 	}
 	
 	/**
@@ -52,22 +52,22 @@ public class Carafe {
 	 * @param cap int taille du contenu qu’on veut redéfinir
 	 */
 	public void Contenu(int cont) {
-		if (cont + contenu > capacite) contenu = capacite;
-		else contenu = cont;
+		if (cont + contenu_ > capacite_) contenu_ = capacite_;
+		else contenu_ = cont;
 	}
 	
 	/**
 	 * Méthode remplissant la carafe.
 	 */
 	public void Remplir() {
-		contenu = capacite;
+		contenu_ = capacite_;
 	}
 	
 	/**
 	 * Méthode vidant la carafe.
 	 */
 	public void Vider() {
-		contenu = 0;
+		contenu_ = 0;
 	}
 	
 	/**
@@ -78,10 +78,10 @@ public class Carafe {
 		int cap_carafe2 = carafe2.getCapacite(), cont_carafe2 = carafe2.getContenu();
 		int dif_contenu_carafe2 = cap_carafe2 - cont_carafe2;
 		int contenu_a_verser;
-		if (dif_contenu_carafe2 < contenu) contenu_a_verser = dif_contenu_carafe2;
-		else contenu_a_verser = contenu;
+		if (dif_contenu_carafe2 < contenu_) contenu_a_verser = dif_contenu_carafe2;
+		else contenu_a_verser = contenu_;
 		carafe2.Contenu(contenu_a_verser + cont_carafe2);
-		contenu = contenu - contenu_a_verser;
+		contenu_ = contenu_ - contenu_a_verser;
 	}
 	
 }
