@@ -22,7 +22,7 @@ public class Félin extends Animal{
 		super.présente();
 		
 		String etat = (domestique) ? "domestique": "sauvage";
-		System.out.println("Je sui vraiment un animal " + etat);
+		System.out.println("Je suis vraiment un animal " + etat);
 	}
 	
 	/**
